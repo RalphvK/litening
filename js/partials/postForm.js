@@ -10,7 +10,7 @@ $.fn.postForm = function (ajaxOptions) {
         data: fd,
         cache: false,
         processData: false,
-        contentType: false,
+        contentType: 'application/json',
         type: 'POST',
         success: function (data) {
             formResponse(jqObj, data);
